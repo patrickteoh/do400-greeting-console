@@ -26,7 +26,7 @@ stage('Release') {
   steps {
     sh '''
       oc project tsrvaq-greetings
-      oc start-build greeting-console --folow --wait
+      oc start-build greeting-console
     '''
   }
 }
