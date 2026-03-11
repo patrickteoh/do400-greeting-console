@@ -22,13 +22,13 @@ pipeline{
         }
 
         // Add the Release stage here
-stage('Release') {
-  steps {
-    sh '''
-      oc project tsrvaq-greetings
-      oc start-build greeting-console
-    '''
-  }
-}
+        stage('Release') {
+  		steps {
+   		    sh '''
+      			oc project tsrvaq-greetings
+      			oc start-build greeting-console
+    		    '''
+  		}
+	}
     }
 }
